@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PrizePlus Checkout</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+font-family:Poppins,sans-serif;
+background:#0b1220;
+color:#fff;
+}
+.container{
+width:92%;
+max-width:1100px;
+margin:auto;
+padding:40px 0;
+}
+.grid{
+display:grid;
+grid-template-columns:1.1fr .9fr;
+gap:24px;
+}
+.card{
+background:#111a2e;
+padding:28px;
+border-radius:24px;
+border:1px solid rgba(255,255,255,.08);
+}
+.summary{
+background:#fff;
+color:#111;
+}
+h1{
+font-size:42px;
+margin-bottom:8px;
+}
+p.small{
+opacity:.8;
+margin-bottom:20px;
+}
+label{
+display:block;
+margin:14px 0 8px;
+font-weight:600;
+}
+input,select{
+width:100%;
+padding:14px;
+border:none;
+border-radius:14px;
+background:#1b2744;
+color:#fff;
+}
+.row{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:14px;
+}
+button{
+width:100%;
+padding:16px;
+margin-top:22px;
+border:none;
+border-radius:16px;
+background:#ffd54a;
+font-weight:800;
+cursor:pointer;
+}
+.price{
+font-size:48px;
+font-weight:800;
+color:#16a34a;
+margin:12px 0;
+}
+a{
+color:#ffd54a;
+text-decoration:none;
+}
+@media(max-width:900px){
+.grid,.row{grid-template-columns:1fr;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div style="margin-bottom:22px;">
+<a href="index.html">← Back Home</a>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h1>Secure Checkout</h1>
+<p class="small">Complete your PrizePlus entry securely.</p>
+
+<label>Full Name</label>
+<input type="text" placeholder="Enter your full name">
+
+<label>Email Address</label>
+<input type="email" placeholder="Enter your email">
+
+<label>Select Package</label>
+<select>
+<option>1 Ticket - $5</option>
+<option>5 Tickets - $20</option>
+<option>10 Tickets - $35</option>
+</select>
+
+<label>Payment Method</label>
+<select>
+<option>Visa / Mastercard</option>
+<option>PayPal</option>
+<option>Bank Transfer</option>
+<option>Mobile Wallet</option>
+</select>
+
+<label>Card Number</label>
+<input type="text" placeholder="1234 5678 9012 3456">
+
+<div class="row">
+<div>
+<label>Expiry</label>
+<input type="text" placeholder="MM/YY">
+</div>
+
+<div>
+<label>CVV</label>
+<input type="text" placeholder="123">
+</div>
+</div>
+
+<button>🎟 Pay & Enter Draw</button>
+
+<p class="small" style="margin-top:14px;">🔒 256-bit encrypted checkout</p>
+
+</div>
+
+<div class="card summary">
+<h2>Order Summary</h2>
+<p>10 Ticket Bundle</p>
+
+<div class="price">$35</div>
+
+<hr style="margin:18px 0;">
+
+<p>✔ Instant ticket confirmation</p>
+<p>✔ Entry numbers emailed</p>
+<p>✔ Eligible for next jackpot draw</p>
+
+<hr style="margin:18px 0;">
+
+<p><strong>Current Jackpot:</strong> $250,000</p>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
