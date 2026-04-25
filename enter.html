@@ -1,15 +1,68 @@
+<!-- enter.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PrizePlus</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PrizePlus | Enter</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Poppins,sans-serif;background:#f5f7fb;color:#111827}
+.container{width:92%;max-width:1100px;margin:auto}
+header{background:#0b1f5e;padding:14px 0}
+.nav{display:flex;justify-content:space-between;align-items:center}
+.brand{display:flex;align-items:center;gap:14px;color:#fff;text-decoration:none;font-weight:700;font-size:30px}
+.brand img{width:62px;height:62px;object-fit:contain}
+nav a{color:#fff;text-decoration:none;margin-left:18px}
+.hero{text-align:center;padding:50px 0 25px}
+.hero img{width:150px;margin:auto}
+.hero h1{font-size:42px;color:#0b1f5e;margin-top:14px}
+.wrap{max-width:700px;margin:20px auto 60px;background:#fff;padding:35px;border-radius:22px;box-shadow:0 12px 28px rgba(0,0,0,.08)}
+input,select{width:100%;padding:16px;margin-bottom:14px;border:1px solid #d9dce4;border-radius:12px;font-size:16px}
+button{width:100%;padding:16px;border:none;background:#ffd54a;border-radius:12px;font-weight:700;font-size:17px}
+footer{background:#08153f;color:#fff;text-align:center;padding:24px}
+@media(max-width:700px){nav{display:none}.brand{font-size:24px}.hero h1{font-size:32px}}
+</style>
 </head>
 <body>
-    <h1>Welcome to PrizePlus</h1>
-    <p>We are excited to have you here at PrizePlus.</p>
-    <footer>
-        <p>Contact us at PrizePlus support.</p>
-    </footer>
+<header>
+<div class="container nav">
+<a class="brand" href="index.html"><img src="logo.png"><span>PrizePlus</span></a>
+<nav>
+<a href="index.html">Home</a>
+<a href="enter.html">Enter</a>
+<a href="winners.html">Winners</a>
+<a href="claim.html">Claim</a>
+<a href="contact.html">Support</a>
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<img src="logo.png">
+<h1>Enter PrizePlus</h1>
+</section>
+
+<div class="wrap">
+<form>
+<input type="text" placeholder="Full Name" required>
+<input type="email" placeholder="Email Address" required>
+<select required>
+<option>Select Country</option>
+<option>Jamaica</option>
+<option>USA</option>
+<option>Canada</option>
+<option>UK</option>
+<option>Other</option>
+</select>
+<input type="text" placeholder="Phone Number (optional)">
+<button type="submit">Submit Entry</button>
+</form>
+</div>
+
+<footer>© 2026 PrizePlus</footer>
 </body>
 </html>
