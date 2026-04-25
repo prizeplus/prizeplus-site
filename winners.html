@@ -1,18 +1,56 @@
+<!-- winners.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Winners</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PrizePlus | Winners</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Poppins,sans-serif;background:#f5f7fb}
+.container{width:92%;max-width:1150px;margin:auto}
+header{background:#0b1f5e;padding:14px 0}
+.nav{display:flex;justify-content:space-between;align-items:center}
+.brand{display:flex;align-items:center;gap:14px;color:#fff;text-decoration:none;font-weight:700;font-size:30px}
+.brand img{width:62px;height:62px}
+nav a{color:#fff;text-decoration:none;margin-left:18px}
+.hero{text-align:center;padding:45px 0}
+.hero img{width:150px;margin:auto}
+.hero h1{font-size:42px;color:#0b1f5e;margin-top:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;padding-bottom:60px}
+.card{background:#fff;padding:24px;border-radius:18px;box-shadow:0 12px 28px rgba(0,0,0,.08)}
+.name{font-weight:700;font-size:22px;color:#0b1f5e}
+footer{background:#08153f;color:#fff;text-align:center;padding:24px}
+@media(max-width:700px){nav{display:none}.brand{font-size:24px}.hero h1{font-size:32px}}
+</style>
 </head>
 <body>
-    <h1>Winners</h1>
-    <p>Welcome to PrizePlus, where we celebrate our winners!</p>
-    <div class="winners-list">
-        <ul>
-            <li>Alice - PrizePlus Champion</li>
-            <li>Bob - PrizePlus Runner-up</li>
-        </ul>
-    </div>
+<header>
+<div class="container nav">
+<a class="brand" href="index.html"><img src="logo.png"><span>PrizePlus</span></a>
+<nav>
+<a href="index.html">Home</a>
+<a href="enter.html">Enter</a>
+<a href="winners.html">Winners</a>
+<a href="claim.html">Claim</a>
+<a href="contact.html">Support</a>
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<img src="logo.png">
+<h1>Recent Winners</h1>
+</section>
+
+<div class="container grid">
+<div class="card"><div class="name">J. Brown</div><p>$500 Cash Reward</p></div>
+<div class="card"><div class="name">A. Lee</div><p>iPhone Prize</p></div>
+<div class="card"><div class="name">M. James</div><p>Gift Card Reward</p></div>
+<div class="card"><div class="name">T. Wilson</div><p>Laptop Prize</p></div>
+</div>
+
+<footer>© 2026 PrizePlus</footer>
 </body>
 </html>
