@@ -4,13 +4,168 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Support - PrizePluse</title>
-<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f4f4f4;
+color:#111;
+}
+
+header{
+background:#001f5c;
+padding:15px 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+color:white;
+font-size:30px;
+font-weight:700;
+}
+
+.logo img{
+width:55px;
+height:55px;
+border-radius:10px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:500;
+}
+
+.wrap{
+max-width:1100px;
+margin:60px auto;
+padding:0 20px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+}
+
+.box{
+background:white;
+padding:35px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+h1{
+font-size:44px;
+color:#001f5c;
+margin-bottom:10px;
+}
+
+.sub{
+color:#666;
+margin-bottom:25px;
+}
+
+input,textarea{
+width:100%;
+padding:16px;
+margin-bottom:15px;
+border:1px solid #ddd;
+border-radius:12px;
+font-size:16px;
+}
+
+textarea{
+min-height:140px;
+resize:vertical;
+}
+
+button{
+width:100%;
+padding:18px;
+background:#ffd700;
+border:none;
+border-radius:12px;
+font-size:18px;
+font-weight:700;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:translateY(-3px);
+box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.faq-item{
+padding:16px;
+border:1px solid #eee;
+border-radius:12px;
+margin-bottom:12px;
+}
+
+.faq-item h3{
+font-size:18px;
+color:#001f5c;
+margin-bottom:8px;
+}
+
+.faq-item p{
+font-size:15px;
+color:#555;
+line-height:1.6;
+}
+
+.quick{
+margin-top:20px;
+background:#eef5ff;
+padding:18px;
+border-radius:12px;
+font-size:15px;
+line-height:1.7;
+}
+
+footer{
+background:#001f5c;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:50px;
+}
+
+@media(max-width:900px){
+.wrap{
+grid-template-columns:1fr;
+}
+nav{
+display:none;
+}
+h1{
+font-size:34px;
+}
+}
+</style>
 </head>
+
 <body>
 
-<header class="topbar">
-<div class="container nav">
-<a href="index.html" class="brand"><img src="logo.png"><span>PrizePluse</span></a>
+<header>
+<div class="logo">
+<img src="logo.png">
+PrizePluse
+</div>
+
 <nav>
 <a href="index.html">Home</a>
 <a href="enter.html">Enter</a>
@@ -18,23 +173,58 @@
 <a href="claim.html">Claim</a>
 <a href="contact.html">Support</a>
 </nav>
-</div>
 </header>
 
-<section class="page">
-<div class="container center">
-<h1>Contact Support</h1>
+<div class="wrap">
 
-<form class="entry-form">
-<input type="text" placeholder="Full Name">
-<input type="email" placeholder="Email Address">
-<textarea placeholder="Your Message"></textarea>
-<button type="submit" class="btn gold">Send Message</button>
+<div class="box">
+<h1>Contact Support</h1>
+<p class="sub">Need help with entries, claims or account questions?</p>
+
+<form>
+<input type="text" placeholder="Full Name" required>
+<input type="email" placeholder="Email Address" required>
+<textarea placeholder="How can we help you?" required></textarea>
+<button type="submit">Send Message</button>
 </form>
 
+<div class="quick">
+📧 support@prizepluse.com<br>
+⏰ Response Time: 24-48 Hours<br>
+🌍 Worldwide Assistance
 </div>
-</section>
+</div>
 
-<script src="script.js"></script>
+<div class="box">
+<h1>FAQ</h1>
+
+<div class="faq-item">
+<h3>How do I enter?</h3>
+<p>Use the Enter page and submit your details for active promotions.</p>
+</div>
+
+<div class="faq-item">
+<h3>How are winners selected?</h3>
+<p>Eligible entries are reviewed and selected according to promotion rules.</p>
+</div>
+
+<div class="faq-item">
+<h3>How do I claim a prize?</h3>
+<p>Use the Claim page after receiving an official winner notification.</p>
+</div>
+
+<div class="faq-item">
+<h3>Do you ask for passwords or OTP codes?</h3>
+<p>No. PrizePluse never asks for passwords, PINs or one-time codes.</p>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 PrizePluse. All Rights Reserved.
+</footer>
+
 </body>
 </html>
