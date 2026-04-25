@@ -2,232 +2,107 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PrizePlus | Enter</title>
-<meta name="description" content="Enter current PrizePlus promotions and reward opportunities.">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<!-- GOOGLE ANALYTICS -->
-<!-- Replace G-XXXXXXXXXX with your real Measurement ID -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-XXXXXXXXXX');
-</script>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Enter - PrizePlus</title>
 
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
 body{
-font-family:'Poppins',sans-serif;
-background:#f5f7fb;
-color:#111827;
-line-height:1.6;
-}
-
-a{
-text-decoration:none;
-color:inherit;
-}
-
-.container{
-width:92%;
-max-width:1120px;
-margin:auto;
+margin:0;
+font-family:Arial,Helvetica,sans-serif;
+background:#eef1f6;
 }
 
 header{
-background:#0b1f5e;
-padding:14px 0;
-box-shadow:0 8px 18px rgba(0,0,0,.08);
-}
-
-.nav{
+background:#001f63;
+padding:18px 30px;
 display:flex;
 justify-content:space-between;
 align-items:center;
-gap:20px;
 }
 
-.brand{
+.logo{
 display:flex;
 align-items:center;
-gap:14px;
+gap:12px;
 color:#fff;
-font-size:30px;
-font-weight:700;
+font-size:34px;
+font-weight:800;
 }
 
-.brand img{
-width:68px;
-height:68px;
-object-fit:contain;
+.logo img{
+height:55px;
 }
 
 nav a{
-color:#fff;
-margin-left:18px;
-font-weight:500;
-}
-
-.hero{
-text-align:center;
-padding:50px 0 24px;
-}
-
-.hero img{
-width:170px;
-display:block;
-margin:auto;
-}
-
-.hero h1{
-font-size:44px;
-color:#0b1f5e;
-margin-top:14px;
-}
-
-.hero p{
-color:#6b7280;
-max-width:700px;
-margin:10px auto 0;
+color:white;
+text-decoration:none;
+margin-left:24px;
+font-size:18px;
 }
 
 .wrap{
-max-width:760px;
-margin:22px auto 60px;
-background:#fff;
-padding:38px;
-border-radius:24px;
-box-shadow:0 15px 35px rgba(0,0,0,.07);
+max-width:700px;
+margin:auto;
+padding:60px 20px;
 }
 
-.sec-title{
-font-size:22px;
-color:#0b1f5e;
-margin-bottom:14px;
-margin-top:8px;
+.box{
+background:white;
+padding:45px;
+border-radius:18px;
+box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+h1{
+text-align:center;
+font-size:44px;
+margin-bottom:30px;
 }
 
 input,select{
 width:100%;
-padding:16px;
-margin-bottom:14px;
-border:1px solid #d8dce7;
+padding:18px;
+margin-bottom:18px;
+border:1px solid #ccc;
 border-radius:12px;
-font-size:16px;
-}
-
-.check{
-display:flex;
-gap:10px;
-align-items:flex-start;
-margin-bottom:14px;
-font-size:14px;
-color:#374151;
-}
-
-.check input{
-width:auto;
-margin-top:4px;
+font-size:18px;
+box-sizing:border-box;
 }
 
 button{
 width:100%;
-padding:17px;
+padding:18px;
 border:none;
 border-radius:12px;
-background:#ffd54a;
-font-size:17px;
-font-weight:700;
+background:#ffd700;
+font-size:22px;
+font-weight:800;
 cursor:pointer;
-transition:.25s;
 }
 
 button:hover{
-transform:translateY(-2px);
+background:#ffca00;
 }
 
 .note{
 font-size:14px;
-color:#6b7280;
+color:#555;
 margin-top:14px;
+line-height:1.5;
 }
 
-.legal{
-margin-top:22px;
-padding:18px;
-background:#f8fafc;
-border-radius:14px;
-font-size:14px;
-color:#4b5563;
+#msg{
+margin-top:18px;
+font-weight:700;
+text-align:center;
+font-size:18px;
 }
 
 footer{
-background:#08153f;
-color:#fff;
-padding:34px 0;
-}
-
-.footer-grid{
-display:grid;
-grid-template-columns:2fr 1fr;
-gap:24px;
-}
-
-footer h4{
-margin-bottom:10px;
-}
-
-footer a{
-display:block;
-margin:6px 0;
-opacity:.9;
-}
-
-.copy{
-margin-top:10px;
+text-align:center;
+padding:30px;
+color:#666;
 font-size:14px;
-opacity:.85;
-}
-
-/* Cookie Banner */
-#cookieBanner{
-position:fixed;
-left:15px;
-right:15px;
-bottom:15px;
-background:#111827;
-color:#fff;
-padding:16px;
-border-radius:16px;
-z-index:9999;
-display:none;
-box-shadow:0 15px 35px rgba(0,0,0,.18);
-}
-
-#cookieBanner button{
-margin-top:10px;
-width:auto;
-padding:10px 16px;
-font-size:14px;
-}
-
-@media(max-width:760px){
-nav{display:none}
-.brand{font-size:24px}
-.hero h1{font-size:34px}
-.wrap{padding:26px}
-.footer-grid{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -235,164 +110,110 @@ nav{display:none}
 <body>
 
 <header>
-<div class="container nav">
-
-<a href="index.html" class="brand">
-<img src="logo.png" alt="PrizePlus">
+<div class="logo">
+<img src="logo.png">
 <span>PrizePlus</span>
-</a>
+</div>
 
 <nav>
 <a href="index.html">Home</a>
-<a href="enter.html">Enter</a>
 <a href="winners.html">Winners</a>
 <a href="claim.html">Claim</a>
 <a href="contact.html">Support</a>
 </nav>
-
-</div>
 </header>
 
-<section class="hero">
-<div class="container">
-<img src="logo.png" alt="PrizePlus">
-<h1>Enter PrizePlus</h1>
-<p>
-Complete the form below to participate in currently available promotions where eligible.
-No purchase necessary where prohibited by law.
-</p>
-</div>
-</section>
-
-<section class="container">
 <div class="wrap">
+<div class="box">
+
+<h1>Enter Sweepstakes</h1>
 
 <form id="entryForm">
 
-<div class="sec-title">Personal Information</div>
+<input type="text" id="name" placeholder="Full Name" required>
 
-<input type="text" placeholder="Full Name" required>
-<input type="email" placeholder="Email Address" required>
+<input type="email" id="email" placeholder="Email Address" required>
 
-<select required>
-<option value="">Select Country / Region</option>
+<select id="country" required>
+<option value="">Select Country</option>
 <option>Jamaica</option>
 <option>United States</option>
 <option>Canada</option>
 <option>United Kingdom</option>
-<option>Trinidad & Tobago</option>
+<option>Trinidad</option>
+<option>Barbados</option>
+<option>Guyana</option>
+<option>Nigeria</option>
+<option>India</option>
+<option>Australia</option>
 <option>Other</option>
 </select>
 
-<input type="text" placeholder="Phone Number (optional)">
-
-<div class="sec-title">Preferences</div>
-
-<select>
-<option value="">Prize Interests</option>
-<option>Cash Rewards</option>
-<option>Phones</option>
-<option>Laptops</option>
-<option>Gift Cards</option>
-<option>Travel</option>
-</select>
-
-<div class="check">
-<input type="checkbox" required>
-<label>I confirm I am at least 18 years old or meet the age requirement in my region.</label>
-</div>
-
-<div class="check">
-<input type="checkbox" required>
-<label>I agree to the Terms & Conditions and Privacy Policy.</label>
-</div>
-
-<div class="check">
-<input type="checkbox">
-<label>I would like to receive future promotional updates (optional).</label>
-</div>
+<input type="text" id="phone" placeholder="Phone Number (optional)">
 
 <button type="submit">Submit Entry</button>
 
-<p class="note">
-Entries are reviewed according to promotion rules and eligibility requirements.
-</p>
-
-<div class="legal">
-<strong>Why data is collected:</strong><br>
-We collect your submitted information to process entries, contact selected winners,
-prevent abuse or duplicate entries, improve services, and comply with applicable rules.
-</div>
-
 </form>
 
+<div id="msg"></div>
+
+<div class="note">
+By entering, you agree to our Privacy Policy and Terms.  
+Collected data may include browser/device info and IP for fraud prevention and regional eligibility checks.
 </div>
-</section>
+
+</div>
+</div>
 
 <footer>
-<div class="container footer-grid">
-
-<div>
-<h4>PrizePlus</h4>
-<p>Promotions platform for reward opportunities and participant support.</p>
-<p class="copy">© 2026 PrizePlus. All Rights Reserved.</p>
-</div>
-
-<div>
-<h4>Legal</h4>
-<a href="#">Privacy Policy</a>
-<a href="#">Terms & Conditions</a>
-<a href="#">Eligibility Rules</a>
-</div>
-
-</div>
+© 2026 PrizePlus. All rights reserved.
 </footer>
 
-<!-- COOKIE BANNER -->
-<div id="cookieBanner">
-We use cookies and analytics to improve your experience, understand traffic, and remember preferences.
-<br>
-<button onclick="acceptCookies()">Accept</button>
-</div>
-
 <script>
-/* COOKIE CONSENT */
-if(!localStorage.getItem("cookiesAccepted")){
-document.getElementById("cookieBanner").style.display="block";
-}
-function acceptCookies(){
-localStorage.setItem("cookiesAccepted","yes");
-document.getElementById("cookieBanner").style.display="none";
-}
+const form=document.getElementById("entryForm");
+const msg=document.getElementById("msg");
 
-/* GOOGLE SHEETS FORM SUBMIT */
-/* Replace URL below with your Apps Script Web App URL */
-document.getElementById("entryForm").addEventListener("submit", async function(e){
+form.addEventListener("submit",async function(e){
 e.preventDefault();
 
-const inputs = this.querySelectorAll("input");
-const selects = this.querySelectorAll("select");
+msg.innerHTML="Submitting...";
 
-const data = {
-formType: "Entry",
-name: inputs[0].value,
-email: inputs[1].value,
-country: selects[0].value,
-details: "Prize Interest: " + selects[1].value + " | Phone: " + inputs[2].value
+let ip="Unknown";
+
+try{
+let res=await fetch("https://api.ipify.org?format=json");
+let data=await res.json();
+ip=data.ip;
+}catch(err){}
+
+const payload={
+name:document.getElementById("name").value,
+email:document.getElementById("email").value,
+country:document.getElementById("country").value,
+phone:document.getElementById("phone").value,
+ip:ip,
+device:navigator.userAgent,
+referrer:document.referrer
 };
 
 try{
-await fetch("PASTE-YOUR-GOOGLE-SCRIPT-URL-HERE", {
+
+await fetch("https://script.google.com/macros/s/AKfycbxkYs8s5_W8HcqXgCXMnhMHIiAcVOh8nsy74ReBLj1oa1GqXr5s0axL3xIqDjLiksze/exec",{
 method:"POST",
-body: JSON.stringify(data)
+body:JSON.stringify(payload)
 });
 
-alert("Success! Your entry has been submitted.");
-this.reset();
+msg.style.color="green";
+msg.innerHTML="Entry Submitted Successfully!";
+form.reset();
 
-}catch(err){
-alert("Submission error. Please try again.");
+}catch(error){
+
+msg.style.color="red";
+msg.innerHTML="Submission Failed. Try Again.";
+
 }
+
 });
 </script>
 
