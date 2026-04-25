@@ -5,30 +5,214 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PrizePlus | Winners</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Poppins,sans-serif;background:#f5f7fb}
-.container{width:92%;max-width:1150px;margin:auto}
-header{background:#0b1f5e;padding:14px 0}
-.nav{display:flex;justify-content:space-between;align-items:center}
-.brand{display:flex;align-items:center;gap:14px;color:#fff;text-decoration:none;font-weight:700;font-size:30px}
-.brand img{width:62px;height:62px}
-nav a{color:#fff;text-decoration:none;margin-left:18px}
-.hero{text-align:center;padding:45px 0}
-.hero img{width:150px;margin:auto}
-.hero h1{font-size:42px;color:#0b1f5e;margin-top:14px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;padding-bottom:60px}
-.card{background:#fff;padding:24px;border-radius:18px;box-shadow:0 12px 28px rgba(0,0,0,.08)}
-.name{font-weight:700;font-size:22px;color:#0b1f5e}
-footer{background:#08153f;color:#fff;text-align:center;padding:24px}
-@media(max-width:700px){nav{display:none}.brand{font-size:24px}.hero h1{font-size:32px}}
+
+body{
+font-family:Poppins,sans-serif;
+background:#f5f7fb;
+color:#111827;
+}
+
+.container{
+width:92%;
+max-width:1180px;
+margin:auto;
+}
+
+header{
+background:#0b1f5e;
+padding:14px 0;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:20px;
+}
+
+.brand{
+display:flex;
+align-items:center;
+gap:14px;
+color:#fff;
+text-decoration:none;
+font-weight:700;
+font-size:30px;
+}
+
+.brand img{
+width:62px;
+height:62px;
+object-fit:contain;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+margin-left:18px;
+font-weight:500;
+}
+
+.hero{
+text-align:center;
+padding:48px 0 26px;
+}
+
+.hero img{
+width:165px;
+margin:auto;
+display:block;
+}
+
+.hero h1{
+font-size:44px;
+color:#0b1f5e;
+margin-top:16px;
+}
+
+.hero p{
+color:#6b7280;
+margin-top:8px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:22px;
+padding:25px 0 70px;
+}
+
+.card{
+background:#fff;
+padding:26px;
+border-radius:20px;
+box-shadow:0 12px 28px rgba(0,0,0,.07);
+transition:.25s;
+border-top:5px solid #ffd54a;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+.top{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:12px;
+gap:10px;
+}
+
+.name{
+font-size:22px;
+font-weight:700;
+color:#0b1f5e;
+}
+
+.badge{
+background:#e9fff1;
+color:#118a43;
+font-size:13px;
+padding:6px 10px;
+border-radius:999px;
+font-weight:600;
+}
+
+.prize{
+font-size:24px;
+font-weight:700;
+margin:10px 0;
+color:#111827;
+}
+
+.meta{
+font-size:15px;
+line-height:1.8;
+color:#6b7280;
+}
+
+footer{
+background:#08153f;
+color:#fff;
+text-align:center;
+padding:24px;
+margin-top:10px;
+}
+
+/* popup winner toast */
+.toast{
+position:fixed;
+left:18px;
+bottom:18px;
+background:#fff;
+border-radius:16px;
+box-shadow:0 14px 30px rgba(0,0,0,.16);
+padding:16px 18px;
+width:300px;
+z-index:9999;
+display:flex;
+gap:12px;
+align-items:flex-start;
+animation:slideUp .4s ease;
+}
+
+.toast-logo{
+width:46px;
+height:46px;
+border-radius:12px;
+background:#f5f7fb;
+padding:4px;
+flex-shrink:0;
+}
+
+.toast h4{
+font-size:15px;
+color:#0b1f5e;
+margin-bottom:4px;
+}
+
+.toast p{
+font-size:13px;
+color:#6b7280;
+line-height:1.5;
+}
+
+@keyframes slideUp{
+from{transform:translateY(30px);opacity:0}
+to{transform:translateY(0);opacity:1}
+}
+
+@media(max-width:700px){
+nav{display:none}
+.brand{font-size:24px}
+.hero h1{font-size:32px}
+.toast{
+left:10px;
+right:10px;
+bottom:10px;
+width:auto;
+}
+}
 </style>
 </head>
+
 <body>
+
 <header>
 <div class="container nav">
-<a class="brand" href="index.html"><img src="logo.png"><span>PrizePlus</span></a>
+
+<a class="brand" href="index.html">
+<img src="logo.png" alt="PrizePlus">
+<span>PrizePlus</span>
+</a>
+
 <nav>
 <a href="index.html">Home</a>
 <a href="enter.html">Enter</a>
@@ -36,21 +220,107 @@ footer{background:#08153f;color:#fff;text-align:center;padding:24px}
 <a href="claim.html">Claim</a>
 <a href="contact.html">Support</a>
 </nav>
+
 </div>
 </header>
 
 <section class="hero">
-<img src="logo.png">
+<div class="container">
+<img src="logo.png" alt="PrizePlus">
 <h1>Recent Winners</h1>
+<p>Latest confirmed rewards and successful claims.</p>
+</div>
 </section>
 
-<div class="container grid">
-<div class="card"><div class="name">J. Brown</div><p>$500 Cash Reward</p></div>
-<div class="card"><div class="name">A. Lee</div><p>iPhone Prize</p></div>
-<div class="card"><div class="name">M. James</div><p>Gift Card Reward</p></div>
-<div class="card"><div class="name">T. Wilson</div><p>Laptop Prize</p></div>
+<section class="container">
+<div class="grid">
+
+<div class="card">
+<div class="top">
+<div class="name">J. Brown 🇺🇸</div>
+<div class="badge">Confirmed</div>
+</div>
+<div class="prize">$500 Cash</div>
+<div class="meta">
+Region: United States<br>
+Paid: April 2026<br>
+Method: Transfer
+</div>
 </div>
 
-<footer>© 2026 PrizePlus</footer>
+<div class="card">
+<div class="top">
+<div class="name">A. Lee 🇨🇦</div>
+<div class="badge">Delivered</div>
+</div>
+<div class="prize">iPhone Prize</div>
+<div class="meta">
+Region: Canada<br>
+Sent: April 2026<br>
+Courier Confirmed
+</div>
+</div>
+
+<div class="card">
+<div class="top">
+<div class="name">M. James 🇬🇧</div>
+<div class="badge">Claimed</div>
+</div>
+<div class="prize">$250 Gift Card</div>
+<div class="meta">
+Region: United Kingdom<br>
+Issued: April 2026<br>
+Redeemed Successfully
+</div>
+</div>
+
+<div class="card">
+<div class="top">
+<div class="name">T. Wilson 🇯🇲</div>
+<div class="badge">Delivered</div>
+</div>
+<div class="prize">Laptop Prize</div>
+<div class="meta">
+Region: Jamaica<br>
+Delivered: April 2026<br>
+Received Confirmed
+</div>
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 PrizePlus
+</footer>
+
+<!-- popup -->
+<div class="toast" id="toast">
+<img src="logo.png" class="toast-logo" alt="PrizePlus">
+<div>
+<h4 id="toastTitle">Recent Winner</h4>
+<p id="toastText">Sarah from Canada won $500 Cash Reward.</p>
+</div>
+</div>
+
+<script>
+const wins = [
+"Sarah from Canada won $500 Cash Reward.",
+"David from USA won a New Smartphone.",
+"Maria from Spain claimed a Gift Card.",
+"Liam from UK won $250 Cash Reward.",
+"Kay from Jamaica won a Laptop Prize.",
+"Jade from Trinidad claimed a Tablet Reward."
+];
+
+let i = 0;
+const text = document.getElementById("toastText");
+
+setInterval(() => {
+i = (i + 1) % wins.length;
+text.textContent = wins[i];
+}, 4500);
+</script>
+
 </body>
 </html>
