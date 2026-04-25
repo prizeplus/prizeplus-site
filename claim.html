@@ -1,160 +1,34 @@
+<!-- claim.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Claim Prize - PrizePluse</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+<title>PrizePlus | Claim</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
-body{
-background:#f4f4f4;
-color:#111;
-}
-
-header{
-background:#001f5c;
-padding:15px 30px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-.logo{
-display:flex;
-align-items:center;
-gap:12px;
-color:white;
-font-size:30px;
-font-weight:700;
-}
-
-.logo img{
-width:55px;
-height:55px;
-border-radius:10px;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:25px;
-font-weight:500;
-}
-
-.wrap{
-max-width:760px;
-margin:60px auto;
-background:white;
-padding:45px;
-border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-}
-
-h1{
-text-align:center;
-font-size:46px;
-color:#001f5c;
-margin-bottom:10px;
-}
-
-.sub{
-text-align:center;
-color:#666;
-margin-bottom:30px;
-}
-
-.notice{
-background:#eef5ff;
-border-left:5px solid #001f5c;
-padding:16px;
-border-radius:10px;
-margin-bottom:25px;
-font-size:15px;
-line-height:1.6;
-}
-
-input,select,textarea{
-width:100%;
-padding:17px;
-margin-bottom:16px;
-border:1px solid #ddd;
-border-radius:12px;
-font-size:16px;
-}
-
-.row{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:15px;
-}
-
-button{
-width:100%;
-padding:18px;
-background:#ffd700;
-border:none;
-border-radius:12px;
-font-size:18px;
-font-weight:700;
-cursor:pointer;
-transition:.3s;
-}
-
-button:hover{
-transform:translateY(-3px);
-box-shadow:0 8px 20px rgba(0,0,0,.15);
-}
-
-.safe{
-margin-top:18px;
-text-align:center;
-font-size:14px;
-color:#666;
-}
-
-footer{
-background:#001f5c;
-color:white;
-text-align:center;
-padding:25px;
-margin-top:50px;
-}
-
-@media(max-width:768px){
-nav{
-display:none;
-}
-.row{
-grid-template-columns:1fr;
-}
-.wrap{
-margin:25px 15px;
-padding:28px;
-}
-h1{
-font-size:34px;
-}
-}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Poppins,sans-serif;background:#f5f7fb}
+.container{width:92%;max-width:1100px;margin:auto}
+header{background:#0b1f5e;padding:14px 0}
+.nav{display:flex;justify-content:space-between;align-items:center}
+.brand{display:flex;align-items:center;gap:14px;color:#fff;text-decoration:none;font-weight:700;font-size:30px}
+.brand img{width:62px;height:62px}
+nav a{color:#fff;text-decoration:none;margin-left:18px}
+.hero{text-align:center;padding:45px 0}
+.hero img{width:150px;margin:auto}
+.hero h1{font-size:42px;color:#0b1f5e;margin-top:14px}
+.wrap{max-width:700px;margin:10px auto 60px;background:#fff;padding:35px;border-radius:22px;box-shadow:0 12px 28px rgba(0,0,0,.08)}
+input,textarea{width:100%;padding:16px;margin-bottom:14px;border:1px solid #d9dce4;border-radius:12px}
+button{width:100%;padding:16px;border:none;background:#ffd54a;border-radius:12px;font-weight:700}
+footer{background:#08153f;color:#fff;text-align:center;padding:24px}
+@media(max-width:700px){nav{display:none}.brand{font-size:24px}.hero h1{font-size:32px}}
 </style>
 </head>
-
 <body>
-
 <header>
-<div class="logo">
-<img src="logo.png">
-PrizePluse
-</div>
-
+<div class="container nav">
+<a class="brand" href="index.html"><img src="logo.png"><span>PrizePlus</span></a>
 <nav>
 <a href="index.html">Home</a>
 <a href="enter.html">Enter</a>
@@ -162,4 +36,24 @@ PrizePluse
 <a href="claim.html">Claim</a>
 <a href="contact.html">Support</a>
 </nav>
-</header
+</div>
+</header>
+
+<section class="hero">
+<img src="logo.png">
+<h1>Claim Reward</h1>
+</section>
+
+<div class="wrap">
+<form>
+<input type="text" placeholder="Full Name">
+<input type="email" placeholder="Registered Email">
+<input type="text" placeholder="Claim Reference ID">
+<textarea placeholder="Additional Details"></textarea>
+<button type="submit">Submit Claim</button>
+</form>
+</div>
+
+<footer>© 2026 PrizePlus</footer>
+</body>
+</html>
